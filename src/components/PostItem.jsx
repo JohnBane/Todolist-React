@@ -2,12 +2,12 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import MyButton from './UI/MyButton/MyButton'
 
-const PostItem = ({ post, remove }) => {
+const PostItem = ({ post, remove, number }) => {
     const navigate = useNavigate();
     return (
         <div className='todo'>
             <div className='todo__item'>
-                <div className='todo__title' key={post.id}><span>{`${post.id}. `}</span>{post.title}</div>
+                <div className='todo__title' key={post.id}><span>{`${number}. `}</span>{post.title}</div>
                 <div className='todo__body'>{post.body}</div>
                 <div className='todo__desc'>{post.description}</div>
             </div>
