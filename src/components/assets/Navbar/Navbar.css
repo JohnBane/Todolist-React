@@ -1,0 +1,28 @@
+.navbar {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 55px;
+    border: 2px solid teal;
+    border-radius: 7px;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    background: #f6f6f6;
+    padding: 0 15px;
+
+}
+
+.navbar a {
+    margin-left: 15px;
+}
+
+.navbar a:first-child {
+    margin-left: 0;
+}
+
+.navbar a:hover {
+    border-bottom: 2px dashed orange;
+    color: orange;
+}

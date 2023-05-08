@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+    z-index: -10;
+}
+
+a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+/*App*/
+
+.App {
+    width: 1024px;
+    border: 1px solid teal;
+    margin-top: 20px;
+    border-radius: 3px;
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+}
+
+/*PostItem*/
+
+.todo {
+    display: flex;
+    align-items: center;
+    border: 2px inset teal;
+    margin: 10px 0;
+    padding: 10px 20px;
+    font-weight: 400;
+    max-height: 150px;
+}
+
+.todo__title {
+    font-size: 19px;
+    font-weight: 550;
+    letter-spacing: 1px;
+}
+
+.todo__body {
+    margin: 7px 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.todo__desc {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.todo__btns {
+    width: 200px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.todo__btns button:hover {
+    cursor: pointer;
+}
+
+.todo__open {
+    margin: 5px;
+}
+
+/*create*/
+.create {
+    width: 100%;
+    height: 100%;
+    margin: 20px 0;
+    display: flex;
+}
+
+.create__name {
+    width: 33.3%;
+}
+
+.create__body {
+    width: 33.3%;
+    margin: 0 15px;
+}
+
+.create__btns {
+    width: 100px;
+    height: 30px;
+}
+
+.pages {
+    border: 1px solid black;
+    width: 960px;
+    min-height: 200px;
+
+    display: flex;
+    align-items: center;
+}
+
+.page_wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.page__all {
+    margin-left: 3px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.current {
+    border: 2px solid orange;
+    color: orange;
+    font-weight: bold;
+}
+
+.page button:first-child {
+    margin-left: 0;
+}
+
+.todo__full {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    border: 2px dashed #000;
+}
+
+.todo__body {
+    font-weight: 500;
+    margin: 10px 50px;
+}
+
+.todo__btns-back {
+    width: 100px;
+    margin: 20px 5px 10px 0;
+}
+
+.todo__btns-back button:hover {
+    cursor: pointer;
+}
